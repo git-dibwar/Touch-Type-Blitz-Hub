@@ -20,5 +20,5 @@ function updateTimer() {
     const currentTime = Date.now();
     const elapsedSeconds = Math.floor((currentTime - startTime) / 1000);
     // document.getElementById("wpm").textContent = elapsedSeconds;
-    document.getElementById("wpm").textContent= Math.round(words) * 60 / elapsedSeconds+" wpm";
+    document.getElementById("wpm").textContent= "Speed: "+Math.round(words * 60 / elapsedSeconds)+" wpm";
 }

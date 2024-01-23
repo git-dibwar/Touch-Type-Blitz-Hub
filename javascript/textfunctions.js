@@ -16,7 +16,7 @@ textSaveButton.addEventListener("click", function () {
   //Count the words
   const withoutSpace = noOfWords.replace(/\s/g, "");
   const chCount = withoutSpace.length;
-  words = chCount/4;
+  words = Math.round(chCount/4);
   console.log(words);
   wordCount.textContent = "Total Words: " + Math.round(words);
 

@@ -17,5 +17,5 @@ function resetTextArea() {
   stopTimer();
   newText.readOnly = false;
   // Reset the timer display
-  document.getElementById("wpm").textContent = "0 wpm";
+  document.getElementById("wpm").textContent = "Speed: 0 wpm";
 }
