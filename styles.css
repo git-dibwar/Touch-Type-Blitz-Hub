@@ -1,3 +1,9 @@
+body{
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 #savedTextContainer{
     -webkit-user-select: none;
         -moz-user-select: none;
