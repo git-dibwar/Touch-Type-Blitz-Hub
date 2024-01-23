@@ -22,12 +22,22 @@ textarea{
     position: absolute;
 
 }
-#textInput, #newText{
+#textInput{
     width: 500px;
     height: 300px;
     position: relative;
     padding-top: 10px;
     font-size: 16px;
+    background-color: palevioletred;
+}
+#newText{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    padding-top: 10px;
+    font-size: 16px;
+    display: none;
+    background-color: rgb(163, 245, 241);
 }
 /* Update the class names */
 .yourNewClass1,
