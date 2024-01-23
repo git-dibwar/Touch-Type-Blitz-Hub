@@ -33,11 +33,14 @@ textSaveButton.addEventListener("click", function () {
   console.log("Text saved");
   textInput.readOnly = true; //Disable further input
   textInput.style.display = "none";
+  newText.style.display = "block";
 });
 
 //Event listener for input in the new text area
 textAddButton.addEventListener("click", function () {
   textInput.style.display = "block"; //show the textarea
+  newText.style.display = "none";
+
   savedTextContainer.innerHTML = "";
   textInput.readOnly = false; //Enable input
   stopTimer(); //Stop the timer
