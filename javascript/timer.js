@@ -22,6 +22,3 @@ function updateTimer() {
     // document.getElementById("wpm").textContent = elapsedSeconds;
     document.getElementById("wpm").textContent= Math.round(words) * 60 / elapsedSeconds+" wpm";
 }
-
-// Export functions if needed
-// module.exports = { startTimer, stopTimer, updateTimer };
