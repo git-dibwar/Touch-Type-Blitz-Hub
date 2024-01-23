@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Typing Game</title>
+</head>
+
+<body>
+    <label for="practise">Save and start typing</label>
+    <div class="yourNewClass1">
+        <span class="yourNewClass2">Metrics:</span>
+        <div class="yourNewClass3">
+            <span id="yourNewId1" class="yourNewClass4" title="Typing speed in the last lesson.">
+                <span class="yourNewClass2">Speed:</span>
+                <span class="yourNewClass5">0wpm</span>
+                (<span class="yourNewClass5 yourNewClass6" title="The difference from the average value.">↑+0wpm</span>)
+            </span>
+            <span id="yourNewId2" class="yourNewClass4"
+                title="The percentage of characters typed without errors in the last lesson.">
+                <span class="yourNewClass2">Accuracy:</span>
+                <span class="yourNewClass5">0%</span>
+                (<span class="yourNewClass5 yourNewClass6" title="The difference from the average value.">↑+0%</span>)
+            </span>
+            <span id="yourNewId3" class="yourNewClass4"
+                title="Score of the last lesson in abstract points. Scores are greater when you type faster and with fewer errors.">
+                <span class="yourNewClass2">Score:</span>
+                <span class="yourNewClass5">0</span>
+                (<span class="yourNewClass5 yourNewClass6" title="The difference from the average value.">↑+0</span>)
+            </span>
+        </div>
+    </div>
+    <h3 id="result">Result: </h3>
+    <h2 id="timer">Time: </h2>
+    <p id="status">Status: Incomplete</p>
+    <p id="wordCount">Total Words: </p>
+    <textarea id="textInput" placeholder="Type something"></textarea>
+    <!-- <div id="savedTextContainer"></div> -->
+    <div id="savedTextContainer"></div> <!--the actual saved text will appear here-->
+
+    <button id="textAddButton" type="button">
+        Add New Text
+    </button>
+    <button id="textSaveButton" type="button">
+        Save Text and start typing
+    </button>
+
+    <!-- new text area -->
+    <textarea id="newText" oninput="handleInput(this.value)" placeholder="Type something"></textarea>
+    <!-- <script src="app.js"></script> -->
+    <script src="javascript/main.js"></script>
+    <script src="javascript/textfunctions.js"></script>
+    <script src="javascript/timer.js"></script>
+</body>
+
+</html>

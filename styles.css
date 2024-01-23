@@ -1,0 +1,52 @@
+#savedTextContainer{
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+label,textarea{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+textarea{
+    display: block;
+    max-width: 500px;
+    max-height: 300px;
+    resize: none;
+
+}
+#textCursor{
+    background-color: rgb(247, 6, 6);
+    width: 2px;
+    height: 1.2em;
+    position: absolute;
+
+}
+#textInput, #newText{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    padding-top: 10px;
+    font-size: 16px;
+}
+/* Update the class names */
+.yourNewClass1,
+.yourNewClass3 {
+    align-items: center;
+    display: flex;
+}
+
+.yourNewClass1 {
+    height: 2rem;
+}
+
+/* Rest of your styles remain unchanged */
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+user agent stylesheet div {
+    display: block;
+}
