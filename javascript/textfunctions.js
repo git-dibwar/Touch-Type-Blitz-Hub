@@ -7,7 +7,7 @@ const savedTextContainer = document.getElementById("savedTextContainer");
 const wordCount = document.getElementById("wordCount");
 const resultElement = document.getElementById("result");
 const statusElement = document.getElementById("status");
-
+let words = 0;
 //Event listener for saving text
 textSaveButton.addEventListener("click", function () {
   const savedText = textInput.value;
@@ -16,8 +16,9 @@ textSaveButton.addEventListener("click", function () {
   //Count the words
   const withoutSpace = noOfWords.replace(/\s/g, "");
   const chCount = withoutSpace.length;
-  console.log(chCount / 4);
-  wordCount.textContent = "Total Words: " + Math.round(chCount / 5);
+  words = chCount/4;
+  console.log(words);
+  wordCount.textContent = "Total Words: " + Math.round(words);
 
   // Update the content of the savedTextContainer
   savedTextContainer.innerHTML = "";
@@ -44,9 +45,14 @@ textAddButton.addEventListener("click", function () {
 
 // Add event listener for input in the new text area
 let completed = false;
-newText.addEventListener("input", function () {
+newText.addEventListener("input", function() {
   const enteredText = newText.value;
   const compareText = savedTextContainer.textContent;
+
+  if (!timerInterval && newText.value !== "") {
+    startTimer();
+  }
+  
 
   let allCorrect = true;
   // let completed = false;
@@ -68,6 +74,10 @@ newText.addEventListener("input", function () {
     if ((completed = enteredText.length === compareText.length)) {
       console.log("completed");
     }
+    if(enteredText.length===compareText.length){
+      stopTimer();
+      newText.readOnly = true;
+    }
 
     // Update the background color of the span based on correctness
     const span = savedTextContainer.children[i];
@@ -81,16 +91,5 @@ newText.addEventListener("input", function () {
   statusElement.textContent = completed
     ? "Status: Completed"
     : "Status: Incomplete";
+    
 });
-
-function handleInput(value) {
-  if (!timerInterval && value.trim() !== "") {
-    startTimer();
-  }
-  if (completed) {
-    stopTimer();
-  }
-}
-
-// Export functions if needed
-// module.exports = { handleInput };

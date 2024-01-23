@@ -1,6 +1,8 @@
 //Time variables
 let startTime = 0;
 let timerInterval;
+let wordsPerMinute = 0;
+
 
 function startTimer() {
     startTime = Date.now();
@@ -17,7 +19,8 @@ function stopTimer() {
 function updateTimer() {
     const currentTime = Date.now();
     const elapsedSeconds = Math.floor((currentTime - startTime) / 1000);
-    document.getElementById("timer").textContent = elapsedSeconds + " seconds";
+    // document.getElementById("wpm").textContent = elapsedSeconds;
+    document.getElementById("wpm").textContent= Math.round(words) * 60 / elapsedSeconds+" wpm";
 }
 
 // Export functions if needed

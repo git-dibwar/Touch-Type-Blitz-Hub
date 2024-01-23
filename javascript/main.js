@@ -15,7 +15,7 @@ function resetTextArea() {
 
   // Stop the timer
   stopTimer();
-
+  newText.readOnly = false;
   // Reset the timer display
-  document.getElementById("timer").textContent = "0 seconds";
+  document.getElementById("wpm").textContent = "0 wpm";
 }
