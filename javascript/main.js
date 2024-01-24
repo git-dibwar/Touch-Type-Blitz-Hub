@@ -18,4 +18,6 @@ function resetTextArea() {
   newText.readOnly = false;
   // Reset the timer display
   document.getElementById("wpm").textContent = "Speed: 0 wpm";
+  document.getElementById("result").textContent = "Result: false";
+  document.getElementById("status").textContent = "Status: Incomplete";
 }
