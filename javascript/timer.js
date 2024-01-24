@@ -1,4 +1,6 @@
 //Time variables
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 let startTime = 0;
 let timerInterval;
 let wordsPerMinute = 0;
