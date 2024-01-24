@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <label for="practise">Save and start typing</label>
+    <h1 id="name">Touch Type Blitz Hub</label>
     <!-- <div class="yourNewClass1">
         <span class="yourNewClass2">Metrics:</span>
         <div class="yourNewClass3">
@@ -36,19 +36,28 @@
             </span>
         </div>
     </div> -->
-    <h3 id="result">Result: </h3>
-    <h2 id="wpm">Speed: </h2>
-    <p id="status">Status: Incomplete</p>
-    <p id="wordCount">Total Words: </p>
-    <textarea id="textInput" placeholder="Type something"></textarea>
+    <div class="stats">
+        <p id="result">Result: </p>
+        <p id="wpm">Speed: </p>
+        <p id="status">Status: Incomplete</p>
+        <p id="wordCount">Total Words: </p>
+    </div>
+    <div class="textMainBox">
+        <div id="savedTextContainer"></div> <!--the actual saved text will appear here-->
+        <div class="textInputBox">
+            <textarea id="textInput" placeholder="Type something"></textarea>
+            <textarea id="newText" placeholder="Type something"></textarea>
+        </div>
+    </div>
+    <!-- <textarea id="textInput" placeholder="Type something"></textarea> -->
     <!-- <div id="savedTextContainer"></div> -->
-    <div id="savedTextContainer"></div> <!--the actual saved text will appear here-->
+    <!-- <div id="savedTextContainer"></div> the actual saved text will appear here -->
 
     <button id="textAddButton" type="button">
-        Add New Text
+        New
     </button>
     <button id="textSaveButton" type="button">
-        Save Text and start typing
+        Save
     </button>
 
     <!-- new text area -->

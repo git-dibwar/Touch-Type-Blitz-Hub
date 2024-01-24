@@ -41,7 +41,7 @@ textSaveButton.addEventListener("click", function () {
 textAddButton.addEventListener("click", function () {
   textInput.style.display = "block"; //show the textarea
   newText.style.display = "none";
-
+  savedTextContainer.style.display = "none";
   savedTextContainer.innerHTML = "";
   textInput.readOnly = false; //Enable input
   stopTimer(); //Stop the timer
@@ -85,7 +85,7 @@ newText.addEventListener("input", function() {
 
     // Update the background color of the span based on correctness
     const span = savedTextContainer.children[i];
-    span.style.backgroundColor = isCorrect ? "lightgreen" : "salmon";
+    span.style.backgroundColor = isCorrect ? "green" : "red";
   }
 
   // Update the content of the result element
