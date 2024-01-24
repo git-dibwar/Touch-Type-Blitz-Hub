@@ -34,6 +34,7 @@ textSaveButton.addEventListener("click", function () {
   textInput.readOnly = true; //Disable further input
   textInput.style.display = "none";
   newText.style.display = "block";
+  savedTextContainer.style.display = "block";
 });
 
 //Event listener for input in the new text area

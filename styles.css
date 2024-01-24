@@ -11,6 +11,9 @@ body{
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        border: 2px solid red;
+        border-radius: 5px;
+        display: none;
 }
 label,textarea{
     font-size: 1rem;
