@@ -1,5 +1,4 @@
-//Time variables
-import { injectSpeedInsights } from "@vercel/speed-insights";
+
 
 let startTime = 0;
 let timerInterval;
