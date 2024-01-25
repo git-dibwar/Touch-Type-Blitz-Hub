@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project features a user interface allowing users to input a custom paragraph, with a save function. The main window displays the saved text and includes a dynamic cursor to track the user's position.
+This project is a user-friendly tool designed to measure typing speed accurately. It provides an interface for users to input a custom paragraph, which can be saved. The main window displays the saved text, featuring a dynamic cursor that reflects the user's position within the text. Once the user completes typing the saved text it shows the typing speed.
 
 ## Speed Calculation Logic
 
