@@ -1,13 +1,20 @@
-idea:
-1. Button for puting a custom text
-    `text box pops out and the user can type or paste the required paragraph in it`
-    `it will also pop a "save" button that will save the text that user have entered inside the text box`
-2. There will be a single text box appearing in the main window where the user will see the his "saved" text
-    `there wil be a cursor that will move with each characters typed`
+# Typing Speed Calculator
 
-Speed Calculation Logic
-`will take 5 charcters default as a single word`
-`when the user types it will keep on caculating the charcter count`
-`if the character doen't match with what typed it will turn the character red color and it will keep on turning red until the user corrects the character but still it will permanently make that particular character red at which it made mistake`
-`the moment the user types the timer will start itself in back ground and when the user reaches the last character the timer sotps and it will pop the WPM `
-`it will be couted as (total characters in the paragraph/5)*60/(ending time in seconds-starting time in seconds )`
+## Overview
+
+This project features a user interface allowing users to input a custom paragraph, with a save function. The main window displays the saved text and includes a dynamic cursor to track the user's position.
+
+## Speed Calculation Logic
+
+The typing speed is calculated considering 5 characters as a single word. Mismatches are highlighted in red until corrected. A background timer starts on typing initiation and stops when the user completes the paragraph. The Words Per Minute (WPM) is calculated as (total characters/5) * 60 / (time taken in seconds).
+
+## Instructions
+
+1. Click the button to input a custom paragraph.
+2. Save your text using the "save" button.
+3. View saved text in the main window with a dynamic cursor.
+4. Typing speed is calculated automatically based on the provided logic.
+
+## Contribution
+
+Feel free to contribute or provide feedback!
