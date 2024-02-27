@@ -11,12 +11,12 @@ const statusElement = document.getElementById("status");
 let words = 0;
 //Event listener for saving text
 textSaveButton.addEventListener("click", function () {
-  const savedText = textInput.value.replace(/\s+/g," "); // tackels with multiple newLine
+  const savedText = textInput.value.replace(/\s+/g," ").trim(); // tackels with multiple newLine
   // let savedText = textInput.value;
   const noOfWords = savedText;
 
   //Count the words
-  const withoutSpace = noOfWords.replace(/\s/g,"").trim();
+  const withoutSpace = noOfWords.replace(/\s/g,"");
   const chCount = withoutSpace.length;
   words = Math.round(chCount/4);
   console.log(words);
