@@ -1,6 +1,7 @@
 
 //DOM elements
 const textInput = document.getElementById("textInput");
+
 const textSaveButton = document.getElementById("textSaveButton");
 const newText = document.getElementById("newText");
 const savedTextContainer = document.getElementById("savedTextContainer");
@@ -10,16 +11,20 @@ const statusElement = document.getElementById("status");
 let words = 0;
 //Event listener for saving text
 textSaveButton.addEventListener("click", function () {
-  const savedText = textInput.value;
-  const noOfWords = textInput.value;
+  const savedText = textInput.value.replace(/\s+/g," "); // tackels with multiple newLine
+  // let savedText = textInput.value;
+  const noOfWords = savedText;
 
   //Count the words
-  const withoutSpace = noOfWords.replace(/\s/g, "");
+  const withoutSpace = noOfWords.replace(/\s/g,"").trim();
   const chCount = withoutSpace.length;
   words = Math.round(chCount/4);
   console.log(words);
   wordCount.textContent = "Total Words: " + Math.round(words);
 
+
+  // to remove the \n (newLine) from the savedText
+  // savedText = textInput.value.replace(/\n/g," ");
   // Update the content of the savedTextContainer
   savedTextContainer.innerHTML = "";
 
